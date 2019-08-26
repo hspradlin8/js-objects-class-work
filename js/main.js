@@ -47,3 +47,30 @@ const Sister2 = {
     age: 39,
     name: "Nicole",
 }
+
+const firstName = "Heidi"
+const lastName = "Smith"
+
+function fullName(){
+    const myName = `${firstName} ${lastName}`;
+    console.log("myName is", myName);
+}
+
+fullName();
+
+const crayonColors = ["Blue ", "Red", "Yellow"];
+const fullBox = 4;
+
+function addColor(newColor){
+    crayonColors.push(newColor);
+    return crayonColors.length;
+}
+let crayonBoxNumber = addColor("Mulberry");
+   
+if (crayonBoxNumber < fullBox) {
+    console.log("Pick more colors")
+}else{
+    console.log("your box is full");
+}
+
+    console.log("crayonBoxNumber", crayonBoxNumber);
